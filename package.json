@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-starter",
+  "version": "1.0.0",
+  "description": "Starter project to work with node.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesLouie/nodejs-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesLouie/nodejs-starter/issues"
+  },
+  "homepage": "https://github.com/JamesLouie/nodejs-starter#readme"
+}
