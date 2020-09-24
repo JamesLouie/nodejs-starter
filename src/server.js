@@ -1,4 +1,4 @@
-require('dotenv').config();
+require('./config/environment.config')();
 var app = require('./app');
 
 const port = process.env.PORT || 8080;

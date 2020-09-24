@@ -7,7 +7,11 @@ var state = {
 exports.connect = function(connectionString, databaseName, onComplete){
     if (state.db) return onComplete();
 
-    mongoClient.connect(connectionString, function(err, connectedClient) {
+    let mongoConfig = {
+        useUnifiedTopology: true
+    };
+
+    mongoClient.connect(connectionString, mongoConfig, function(err, connectedClient) {
         if (err) return onComplete(err);
         state.db = connectedClient.db(databaseName);
         onComplete();
